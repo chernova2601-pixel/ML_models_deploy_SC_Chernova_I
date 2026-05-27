@@ -1,0 +1,12 @@
+*.pyc
+__pycache__/
+*.pkl
+*.joblib
+*.log
+data/raw/
+data/processed/
+models/
+.env
+venv/
+.DS_Store
+venv/
