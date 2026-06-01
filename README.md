@@ -1,22 +1,30 @@
-# Credit Default Prediction Service
+# Сессионное задние по курсу "Внедрение моделей машинного обучения", подготовила Чернова Ирина (М2551165)
 
 ## Описание проекта
-Сервис прогнозирования дефолта по кредитным картам.  
+Веб-сервис для прогнозирования дефолта по кредитным картам. 
+Проект демонстрирует полный цикл внедрения ML-модели: от обучения до контейнеризации и A/B-тестирования.
+  
 Модель машинного обучения (Random Forest) обучена на датасете UCI «Default of Credit Card Clients».  
 Цель — предсказать, допустит ли клиент дефолт в следующем месяце.
-
-Проект демонстрирует полный цикл внедрения ML-модели в production: от обучения до контейнеризации, тестирования и A/B-тестирования.
 
 ## Быстрый старт
 
 ### Локально (Python 3.11+)
-```bash
-git clone https://github.com/chernova2601-pixel/ML_models_deploy_SC_Chernova_I.git
-cd ML_models_deploy_SC_Chernova_I
+1. Клонируйте репозиторий и перейдите в него:
+   ```bash
+   git clone https://github.com/chernova2601-pixel/ML_models_deploy_SC_Chernova_I.git
+   cd ML_models_deploy_SC_Chernova_I
+   ```
+2. Создайте и активируйте виртуальное окружение   
 python -m venv venv
 source venv/bin/activate
+3. Установите зависимости:
 pip install -r requirements.txt
+4. Запустите сервер:
 python app/api.py
+
+
+
 Docker
 bash
 docker build -f docker/Dockerfile -t credit_default_service .
