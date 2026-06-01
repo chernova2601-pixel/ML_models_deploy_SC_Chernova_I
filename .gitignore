@@ -1,12 +1,8 @@
-*.pyc
 __pycache__/
-*.pkl
-*.joblib
-*.log
-data/raw/
-data/processed/
-models/
+*.pyc
+venv/
 .env
-venv/
 .DS_Store
-venv/
+*.log
+*.pkl
+models/model_v1.pkl   # если хотите исключить, но модель нужна для репозитория, лучше не исключать
